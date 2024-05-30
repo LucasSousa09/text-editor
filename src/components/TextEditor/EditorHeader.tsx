@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 
 export function EditorHeader(){
-    const [theme, setTheme] = useState(false)
+    const [theme, setTheme] = useState(true)
 
     return (
-        <header className="p-4">
+        <header className="p-4 w-full">
             <motion.button
                 onClick={() => setTheme(state => !state)} 
                 className="h-6 w-6 bg-yellow-100 overflow-clip"
@@ -35,8 +35,6 @@ export function EditorHeader(){
                     }}
                 />
             </motion.button>
-
-            
         </header>
     )
 }
