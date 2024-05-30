@@ -1,8 +1,10 @@
+import { TextEditor } from "./components/TextEditor"
+
 function App() {
   return (
-  <h1>
-    Hello World!
-  </h1>
+    <div className="h-screen w-screen flex items-center justify-center">
+      <TextEditor/>
+    </div>
   )
 }
 
